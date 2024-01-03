@@ -9,8 +9,8 @@ class QuantileLoss(snt.Module):
         return tf.where(tf.abs(x) < k, 0.5 * tf.pow(x, 2), k * (tf.abs(x) - 0.5 * k))
 
 
-    def gaussian_loss(self, td_error: tf.Tensor, b: tf.Tensor):
-        """Implements GL: Gaussian Loss
+    def generalized_loss(self, td_error: tf.Tensor, b: tf.Tensor):
+        """Implements GL: Generalized Huber Loss
                        td_error: TD error
                        b:   threshold parameter
                        """
@@ -22,8 +22,8 @@ class QuantileLoss(snt.Module):
         return loss
 
 
-    def gaussian_loss_approximate(self, td_error: tf.Tensor, b: tf.Tensor):
-        """Implements GL_A: Taylor Approximation of Gaussian Loss
+    def generalized_loss_approximate(self, td_error: tf.Tensor, b: tf.Tensor):
+        """Implements GLA: Taylor Approximation of Generalized Huber Loss (GL)
                td_error: TD error
                b:   threshold parameter
                """
