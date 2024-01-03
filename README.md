@@ -6,7 +6,7 @@ The code for the Generalized Quantile Huber Loss function (referred to as GL), a
 
 ## Code Structure
 ```
-Gamma & Vega Hedging Codebase
+D4PG-QR, DPG-GL, and D4PG-GLA Codebase
 │   run.py - Run D4PG model
 |   simulate_env.py - Simulate the environment
 └───agent
