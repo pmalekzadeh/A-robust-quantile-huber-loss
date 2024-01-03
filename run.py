@@ -35,7 +35,7 @@ flags.DEFINE_float('init_vol', 0.2, 'initial spot vol (Default 0.2)')
 flags.DEFINE_float('poisson_rate', 1.0, 'possion rate of new optiosn in liability portfolio (Default 1.0)')
 flags.DEFINE_float('moneyness_mean', 1.0, 'new optiosn moneyness mean (Default 1.0)')
 flags.DEFINE_float('moneyness_std', 0.0, 'new optiosn moneyness std (Default 0.0)')
-flags.DEFINE_string('critic', 'c51', 'critic distribution type - c51, qr-huber, qr-GL, qr-GL_A, '
+flags.DEFINE_string('critic', 'c51', 'critic distribution type - c51, qr-huber, qr-GL, qr-GLA, '
                                      'iqn-huber (Default c51)')
 flags.DEFINE_float('spread', 0.0, 'Hedging transaction cost (Default 0.0)')
 flags.DEFINE_string('obj_func', 'var', 'Objective function select from meanstd, var or cvar (Default var)')
