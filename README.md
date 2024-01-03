@@ -40,8 +40,10 @@ xmanager==0.2.0
 ```
 
 ## Sample Runs
-### Train & Evaluate the Reinforcement Learning Agent
+### Train the Reinforcement Learning Agent
 ```console
+python run.py -spread=0.005 -obj_func=meanstd -train_sim=40000 -eval_sim=5000 -critic=qr-GL -std_coef=1.645 -init_vol=0.3 -mu=0.0 -vov=0.0 -vega_obs=False -gbm=True -hed_ttm=30 -liab_ttms=60 -init_ttm=30 -poisson_rate=1.0 -action_space=0,1 -logger_prefix=batch1/Table1/TC05/RL/mean_std -n_step=5
+python run.py -spread=0.005 -obj_func=meanstd -train_sim=40000 -eval_sim=5000 -critic=qr-GLA -std_coef=1.645 -init_vol=0.3 -mu=0.0 -vov=0.0 -vega_obs=False -gbm=True -hed_ttm=30 -liab_ttms=60 -init_ttm=30 -poisson_rate=1.0 -action_space=0,1 -logger_prefix=batch1/Table1/TC05/RL/mean_std -n_step=5
 python run.py -spread=0.005 -obj_func=meanstd -train_sim=40000 -eval_sim=5000 -critic=qr -std_coef=1.645 -init_vol=0.3 -mu=0.0 -vov=0.0 -vega_obs=False -gbm=True -hed_ttm=30 -liab_ttms=60 -init_ttm=30 -poisson_rate=1.0 -action_space=0,1 -logger_prefix=batch1/Table1/TC05/RL/mean_std -n_step=5
 ```
 
