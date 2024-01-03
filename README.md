@@ -2,19 +2,18 @@
 
 ## About
 
-The code for the Generalized Quantile Huber Loss function (referred to as GL), along with its second-order Taylor approximation (termed GL-A), as detailed in the research paper titled "A Robust Quantile Huber Loss with Interpretable Parameter Adjustment in Distributional Reinforcement Learning," accepted for presentation at ICASSP 2024 (). The loss function is specifically crafted for distributional reinforcement learning algorithms and provides a mechanism for tuning threshold parameters in an interpretable manner, thereby improving the robustness of the model.
+The code for the Generalized Quantile Huber Loss function (referred to as GL), along with its second-order Taylor approximation (termed GLA), as detailed in the research paper titled "A Robust Quantile Huber Loss with Interpretable Parameter Adjustment in Distributional Reinforcement Learning," accepted for presentation at ICASSP 2024 (). The loss function is specifically crafted for distributional reinforcement learning algorithms and provides a mechanism for tuning threshold parameters in an interpretable manner, thereby improving the robustness of the model.
 
 ## Code Structure
 ```
 Gamma & Vega Hedging Codebase
 │   run.py - Run D4PG model
-│   greek_run.py - Run baseline models
 |   simulate_env.py - Simulate the environment
 └───agent
 │   │   agent.py - D4PG agent
 │   │   distributional.py - distributional dependency for D4PG
-│   │   learning.py - learning module for D4PG
-│   │   quantile_losses.py - quantile Huber loss and our proposed loss functions learning module for D4PG
+│   │   learning.py - learning module for D4PG-QR, D4PG-GLA, and DPG-GL
+│   │   quantile_losses.py - quantile Huber loss and our proposed loss functions (GL and GLA) learning module for D4PG
 
 └───environment
 │   │   Environment.py - Trading Environment
@@ -48,4 +47,5 @@ python run.py -spread=0.005 -obj_func=meanstd -train_sim=40000 -eval_sim=5000 -c
 
 ## Credits
 
-* The implementation of D4PG agent is taken from ACME [D4PG](https://github.com/deepmind/acme/tree/master/acme/agents/tf/d4pg).
+* The implementation of D4PG agent is from [ACME [D4PG](https://github.com/deepmind/acme/tree/master/acme/agents/tf/d4pg)]
+* The trading environment utilized in this project is from the research paper available at SSRN. For further details regarding the environment's implementation, refer to the corresponding repository (https://github.com/rotmanfinhub/gamma-vega-rl-hedging/tree/main)https://github.com/rotmanfinhub/gamma-vega-rl-hedging/tree/main).
