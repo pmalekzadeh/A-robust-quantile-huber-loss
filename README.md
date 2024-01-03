@@ -48,4 +48,4 @@ python run.py -spread=0.005 -obj_func=meanstd -train_sim=40000 -eval_sim=5000 -c
 ## Credits
 
 * The implementation of D4PG agent is from [ACME [D4PG](https://github.com/deepmind/acme/tree/master/acme/agents/tf/d4pg)]
-* The trading environment utilized in this project is from the research paper available at SSRN. For further details regarding the environment's implementation, refer to the corresponding repository (https://github.com/rotmanfinhub/gamma-vega-rl-hedging/tree/main).
+* The trading environment utilized in this project is from the research paper available at SSRN. For further details regarding the environment's implementation, refer to the corresponding repository [gamma-vega-rl-hedging](https://github.com/rotmanfinhub/gamma-vega-rl-hedging/tree/main).
