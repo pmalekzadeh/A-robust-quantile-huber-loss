@@ -13,7 +13,7 @@ D4PG-QR, DPG-GL, and D4PG-GLA Codebase
 │   │   agent.py - D4PG agent
 │   │   distributional.py - distributional dependency for D4PG
 │   │   learning.py - learning module for D4PG-QR, D4PG-GLA, and DPG-GL
-│   │   quantile_losses.py - quantile Huber loss and our proposed loss functions (GL and GLA) learning module for D4PG
+│   │   quantile_losses.py - quantile Huber loss and our proposed loss functions (i.e., GL and GLA)
 
 └───environment
 │   │   Environment.py - Trading Environment
