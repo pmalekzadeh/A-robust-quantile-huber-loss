@@ -2,7 +2,7 @@
 
 ## About
 
-The code for the Generalized Quantile Huber Loss function (denoted as GL), along with its second-order Taylor approximation (denoted as GLA), as detailed in the research paper [["A Robust Quantile Huber Loss with Interpretable Parameter Adjustment in Distributional Reinforcement Learning"] (https://arxiv.org/pdf/2401.02325.pdf)] accepted for presentation at ICASSP 2024. The loss function is specifically crafted for distributional reinforcement learning algorithms and provides a mechanism for tuning threshold parameters in an interpretable manner, thereby improving the robustness of the model.
+The code for the Generalized Quantile Huber Loss function (denoted as GL), along with its second-order Taylor approximation (denoted as GLA), as detailed in the research paper [[A Robust Quantile Huber Loss with Interpretable Parameter Adjustment in Distributional Reinforcement Learning] (https://arxiv.org/pdf/2401.02325.pdf)] accepted for presentation at ICASSP 2024. The loss function is specifically crafted for distributional reinforcement learning algorithms and provides a mechanism for tuning threshold parameters in an interpretable manner, thereby improving the robustness of the model.
 
 ## Code Structure
 ```
