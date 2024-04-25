@@ -4,7 +4,7 @@ The code for the Generalized Quantile Huber Loss function (denoted as GL), along
 
 ## Code Structure
 ```
-D4PG-QR, DPG-GL, and D4PG-GLA Codebase
+D4PG-QR, D4PG-GL, and D4PG-GLA Codebase
 │   run.py - Run D4PG model
 |   simulate_env.py - Simulate the environment
 └───agent
@@ -46,6 +46,5 @@ python run.py -spread=0.005 -obj_func=meanstd -train_sim=40000 -eval_sim=5000 -c
 ```
 
 ## Credits
-
-* The implementation of D4PG agent is from [ACME [D4PG](https://github.com/deepmind/acme/tree/master/acme/agents/tf/d4pg)]
+* The implementation of D4PG-QR agent is from [[gamma-vega-rl-hedging](https://github.com/rotmanfinhub/gamma-vega-rl-hedging)]
 * The trading environment utilized in this project is from the research paper available at [[SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4106814)]. For further details regarding the environment's implementation, refer to the corresponding repository [[gamma-vega-rl-hedging](https://github.com/rotmanfinhub/gamma-vega-rl-hedging/tree/main)].
